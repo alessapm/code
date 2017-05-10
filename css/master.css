@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+}
+
+.content-wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+#three {
+  width: 100%;
+}
+
+#three h2 {
+  margin: 20px 50px;
+}
+
+.speaker-carousel {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.speaker-box {
+  height: 330.12px;
+  width: 246.56px;
+  margin: 20px auto;
+  background-color: blue;
+  position: relative;
+}
+
+.garrett {
+  background-image: url("../images/garrett.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.jessica {
+  background-image: url("../images/JESSICA.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.abdusalam {
+  background-image: url("../images/ABDUSALAM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speaker-box img {
+  padding: 0;
+  margin: 0;
+}
+
+.speaker-description {
+  width: 100%;
+  opacity: 0.95;
+  background-color: #00ADE5;
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+}
+
+.speaker-description h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  padding: 5px 8px;
+}
+
+.speaker-description ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin: 0 0 3px 0;
+  line-height: 1.8em;
+  padding: 0 0 0 30px;
+}
+
+.speaker-description li {
+  padding: 0 5px;
+  margin: 0;
+}
+
+.speaker-links {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+
+.speaker-links button {
+  width: 200px;
+  padding: 20px 21px;
+  margin: 20px 50px;
+  border: 2px #6CC62C solid;
+  background-color: #FFF;
+  color: #6CC62C;
+  transition: 0.5s;
+}
+
+.speaker-links button:hover {
+  background-color: #6CC62C;
+  cursor: pointer;
+  color: #FFF;
+  -webkit-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+}
