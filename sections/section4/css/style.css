@@ -4,6 +4,9 @@ body {
   color: gray;
 }
 
+section {
+  color: #2a2a2a;
+}
 
 #four {
   /*border: 2px solid orange;*/
@@ -60,7 +63,7 @@ body {
 }
 
 .schedule {
-  /*border: 2px red solid;*/
+ font-family: 'Raleway', sans-serif;
 }
 
 .tabs {
@@ -70,6 +73,7 @@ body {
 }
 
 .tabs p {
+  font-family: 'Raleway', sans-serif;
   margin: 45px;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -89,6 +93,8 @@ body {
   border-bottom: 2px solid #00ACE9;
   color: #00ACE9;
   cursor: pointer;
+  font-weight: bold;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -129,29 +135,34 @@ body {
   justify-content: center;
   align-items: center;
   margin-top: 50px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .purchase h3 {
-  margin-right: 30px;
+  font-size: 1.4em;
+  font-family: 'Montserrat', sans-serif;
+}
 
+.purchase h3 span {
+  font-size: 2rem;
 }
 
 .purchase button {
   width: 200px;
   padding: 20px 21px;
   margin: 20px 50px;
-  border: 2px #6CC62C solid;
+  border: 2px #25D432 solid;
   background-color: #FFF;
-  color: #6CC62C;
+  color: #25D432;
   font-size: 1.3rem;
   transition: 0.5s;
 
 }
 
 .purchase button:hover {
-  background-color: #6CC62C;
+  background-color: #25D432;
   cursor: pointer;
-  color: #FFF;
+  color: #FFFFFF;
   -webkit-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
@@ -208,32 +219,16 @@ body {
   margin: 0;
 }
 
-.to-top {
-  border: solid #5E5E5E;
-  height: 40px;
-  width: 40px;
-  font-size: 3rem;
+.nav-to-top {
   align-self: flex-end;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
 }
 
-.to-top p {
-  padding: 0;
-  margin: 0;
+.nav-to-top img {
+  height: 48px;
+  width: 48px;
 }
 
-.to-top i {
-  border: solid #5E5E5E;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  margin: 0 auto;
-  padding: 5px;
-  text-align: center;
-}
+
 
 
 
