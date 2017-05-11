@@ -1,24 +1,28 @@
 window.onload = () => {
-  const dropdownButton = document.querySelector('.circle-speak');
-  const dropdown = document.querySelector('.expanded');
-  const arrow = document.querySelector('.circle-speak i');
+  const dropdownButtons = document.querySelectorAll('.circle-speak');
+  const dropdowns = document.querySelectorAll('.expanded');
+  const arrows = document.querySelectorAll('.circle-speak i');
   const links = document.querySelector('.speaker-links');
+  const speakers = document.querySelector('.speaker-box')
   click = 0;
 
-  const handleClick = dropdownButton.addEventListener("click",() => {
-    click += 1;
-      if((click%2) !== 0) {
-        dropdown.classList.add('show');
-        dropdown.classList.remove('hide');
-        links.style.marginTop= '100px';
-        arrow.classList.add('up-arrow');
-        arrow.classList.remove('down-arrow');
-      } else {
-        dropdown.classList.remove('show');
-        dropdown.classList.add('hide');
-        links.style.marginTop = '0';
-        arrow.classList.remove('up-arrow')
-        arrow.classList.add('down-arrow')
-      };
-    });
-}
+
+    for (var i = 0; i < speakers.length; i++) {
+      dropdownButtons[i].addEventListener('click', () => {
+        click += 1;
+        if((click%2) !== 0) {
+          dropdowns[i].classList.add('show');
+          dropdowns[i].classList.remove('hide');
+          links.style.marginTop= '100px';
+          arrows[i].classList.add('up-arrow');
+          arrows[i].classList.remove('down-arrow');
+        } else {
+            dropdowns[i].classList.remove('show');
+            dropdowns[i].classList.add('hide');
+            links.style.marginTop = '0';
+            arrows[i].classList.remove('up-arrow')
+            arrows[i].classList.add('down-arrow')
+        };
+      });
+    }
+  }
