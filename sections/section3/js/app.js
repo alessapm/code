@@ -1,13 +1,15 @@
-window.onload = () => {
+document.addEventListener('DOMContentLoaded', () => {
   const dropdownButtons = document.querySelectorAll('.circle-speak');
   const dropdowns = document.querySelectorAll('.expanded');
   const arrows = document.querySelectorAll('.circle-speak i');
   const links = document.querySelector('.speaker-links');
-  const speakers = document.querySelector('.speaker-box')
+  const speakers = document.querySelectorAll('.speaker-box')
   click = 0;
 
+  console.log(dropdownButtons[0])
 
-    for (var i = 0; i < speakers.length; i++) {
+
+    for (let i = 0; i < dropdownButtons.length; i++) {
       dropdownButtons[i].addEventListener('click', () => {
         click += 1;
         if((click%2) !== 0) {
@@ -25,4 +27,4 @@ window.onload = () => {
         };
       });
     }
-  }
+})
