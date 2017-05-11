@@ -147,7 +147,7 @@ section {
   font-size: 2rem;
 }
 
-.purchase button {
+.footer-btn {
   width: 200px;
   padding: 20px 21px;
   margin: 20px 50px;
@@ -159,7 +159,7 @@ section {
 
 }
 
-.purchase button:hover {
+.footer-btn:hover {
   background-color: #25D432;
   cursor: pointer;
   color: #FFFFFF;
