@@ -35,6 +35,21 @@ footer {
   justify-content: space-around;
 }
 
+.footer-logos {
+  display: flex;
+  width: 70%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logos h2 {
+  font-size: 2rem;
+}
+
+.footer-logos img {
+  height: 45px;
+  width: 45px;
+}
 
 
 .volunteer-container {
@@ -55,4 +70,10 @@ footer {
   transition: 0.5s;
   font-family: 'Raleway', sans-serif;
 
+}
+
+.gradient-text {
+ background: -webkit-linear-gradient(left, #69c75b ,  #10b5e4 );
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
