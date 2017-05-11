@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway');
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+
+#three {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#three h2 {
+  margin: 20px 50px;
+}
+
+.content-wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.carousel-wrapper {
+  display: flex;
+  width: 100%;
+  margin: 30px auto;
+}
+
+.speaker-carousel {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.speaker-carousel i {
+  border: solid #05ADE5;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 12px;
+}
+
+.right-arrow {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left-arrow {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+
+.speakers {
+  width: 100%;
+  display: flex;
+}
+
+.speaker-box {
+  height: 330.12px;
+  width: 250px;
+  margin: 0 20px;
+  position: relative;
+}
+
+.garrett {
+  background-image: url("../images/garrett.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.jessica {
+  background-image: url("../images/JESSICA.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.abdusalam {
+  background-image: url("../images/ABDUSALAM.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.speaker-box img {
+  padding: 0;
+  margin: 0;
+}
+
+.speaker-description {
+  width: 100.1%;
+  opacity: 0.85;
+  background-color: #00ADE5;
+  position: absolute;
+  bottom: 0;
+  color: #FFF;
+  transition: 0.5s;
+}
+
+.speaker-description h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 17px;
+  margin: 0;
+  padding: 5px 8px;
+}
+
+.speaker-description ul {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  list-style: none;
+  margin: 0 0 3px 0;
+  line-height: 1.8em;
+  padding: 0 0 0 10px;
+}
+
+.speaker-description li {
+  padding: 0;
+  margin: 0;
+}
+
+.expanded {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  color: #FFF;
+  padding: 0 10px;
+  line-height: 1.5em;
+  width: 92%;
+  opacity: 0.85;
+  background-color: #00ADE5;
+  position: absolute;
+  bottom: -91px;
+  transition: 0.5s;
+}
+
+.show {
+  display: block;
+  transition: 0.5s;
+}
+
+.hide {
+  display: none;
+  transition: 0.5s;
+}
+
+.circle-speak {
+  background-color: #FFFFFF;
+  width: 40px;
+  height: 40px;
+  border-radius:40px;
+  border: 1px solid #FFF;
+  bottom: -15px;
+  right: 5px;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-box-shadow: 0px 9px 16px -2px rgba(0,0,0,0.31);
+  -moz-box-shadow: 0px 9px 16px -2px rgba(0,0,0,0.31);
+  box-shadow: 0px 9px 16px -2px rgba(0,0,0,0.31);
+}
+
+.circle-speak i {
+  border: solid #5E5E5E;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 5px;
+  text-align: center;
+}
+
+/*remove padding*/
+.circle-speak p {
+  padding: 0;
+  margin: 0;
+}
+
+.up-arrow {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transition: 0.5s
+}
+
+.down-arrow {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transition: 0.5s
+}
+
+.speaker-links {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.speaker-links button {
+  width: 200px;
+  padding: 20px 21px;
+  margin: 20px 50px;
+  border: 2px #6CC62C solid;
+  background-color: #FFF;
+  color: #6CC62C;
+  transition: 0.5s;
+}
+
+.speaker-links button:hover {
+  background-color: #6CC62C;
+  cursor: pointer;
+  color: #FFF;
+  -webkit-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+}
