@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', function() {
         nearbySearchParameters = {
           location: exposedVenue,
           radius: 600,
-          type: 'point_of_interest'
+          type: 'point_of_interest|art'
         }
         break;
       case 'map-stay':
