@@ -31,7 +31,7 @@ section {
 .section-title-text {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-  font-size: 1.875em;
+  font-size: 1.75em;
   letter-spacing: 5px;
 }
 
@@ -48,7 +48,7 @@ section {
   border-radius: 50%;
   background-color: #10b5e4;
   margin-left: -5px;
-  margin-right: 25px;
+  margin-right: 10px;
   display: inline;
 }
 
@@ -71,14 +71,14 @@ section {
 /* About Section styling */
 
 .about-wrapper {
-  max-width: 900px;
+  max-width: 820px;
   text-align: center;
 }
 
 /* Horizontal rule class replaces hr tag*/
 .hr {
   margin: 30px auto;
-  width: 150px;
+  width: 120px;
   height: 0;
   border-bottom: 2px #676767 solid;
 }
@@ -86,8 +86,8 @@ section {
 .about-headline {
   font-family: 'Montserrat', sans-serif;
   font-weight: 200;
-  /*font-size: 20px;*/
-  font-size: 1.25em;
+  font-size: 1.15em;
+  line-height: 1.6em;
 }
 
 .theme-single {
@@ -99,17 +99,17 @@ section {
 }
 
 .theme-image {
-  border: 7px solid;
+  border: 9px solid;
   border-radius: 50%;
-  height: 180px;
-  width: 180px;
+  height: 150px;
+  width: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .theme-image img {
-  transform: scale(0.4);
+  transform: scale(0.5);
 }
 
 .theme-headline {
@@ -121,8 +121,8 @@ section {
 
 .theme-body {
   font-family: 'Montserrat', sans-serif;
-  font-size: 1em;
-  line-height: 2em;
+  font-size: 0.9em;
+  line-height: 1.6em;
 ;
 }
 
@@ -156,12 +156,14 @@ section {
   font-size: 1.5em;
   line-height: 2.4em;
   letter-spacing: 2.4px;
+  margin: 10px 0;
 }
 
 .attendee-text {
   font-family: 'Raleway', sans-serif,
   font-weight: 600;
   font-size: 1.5em;
+  margin: 10px 0;
 }
 
 
