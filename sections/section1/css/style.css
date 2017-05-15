@@ -75,7 +75,7 @@ TRIANGLE CONTENT
   width: 840px;
 }
 
-h3, .presented-by {
+.presented-by {
   color: rgba(0, 0, 0, 0.35);
   position: absolute;
   top: 300px;
@@ -83,6 +83,79 @@ h3, .presented-by {
   z-index: 10;
 }
 
+.presented-by h3 {
+  font-weight: normal;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+
+.presented-by p {
+  margin: 0;
+  color: rgba(16, 181, 228, .5);
+  font-weight: 100;
+}
+
+.dot {
+  font-size: .8em;
+}
+
+.countdown-container {
+  color: #EEE;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  padding: 10px 3% 10px 20px;
+  text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
+  background-color: rgba(16, 181, 228, .45);
+  border-radius: 2px;
+}
+
+.countdown-container p {
+  margin: 12px 0 8px 0;
+  font-size: .9em;
+}
+
+#countdown {
+  font-size: 2em;
+  text-align: right;
+  border-bottom: 1px solid;
+  padding-bottom: 12px;
+}
+
+#countdown span {
+  font-size: .8em;
+  font-weight: 100;
+}
+
+.thirty-five-percent-off {
+  font-size: 2em;
+  color: #dbf1ff;
+}
+
+.tillevent {
+  font-size: 1.1em;
+}
+
+.hero-btn {
+  width: inherit;
+  padding: 10px 15px;
+  margin: inherit;
+  border: 2px rgba(16, 181, 228, 1) solid;
+  background-color: #FFF;
+  color: rgba(16, 181, 228, 1);
+  font-size: 1em;
+  transition: 0.5s;
+}
+
+.hero-btn:hover {
+  background-color: #25D432 ;
+  cursor: pointer;
+  color: #FFFFFF;
+  border: 2px #25D432 solid;
+  -webkit-box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
+  box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
+}
 
 /*********************
 MEDIA QUERIES

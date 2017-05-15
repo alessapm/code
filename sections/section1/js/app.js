@@ -18,14 +18,12 @@ document.addEventListener("DOMContentLoaded", function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
    // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = days + "Days " + hours + "Hours "
-    + minutes + "Minutes " + seconds + "Seconds ";
-
-   // If the count down is finished, write some text
+    document.getElementById("countdown").innerHTML = days + " days<br/> <span>till exposed!</span>" ;
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "EXPIRED";
     }
+
   }, 1000);
 
 });
