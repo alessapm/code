@@ -82,7 +82,7 @@ section {
   color: #1eb8e4;
 }
 
-.speaker-links {
+.sponsor-button-wrapper button {
   font-family: 'Raleway', sans-serif;
   font-weight: 600;
   font-size: 1.2em;
@@ -96,7 +96,7 @@ section {
   transition: 0.5s;
 }
 
-.speaker-links:hover {
+.sponsor-button-wrapper button:hover {
   background-color: #6CC62C;
   cursor: pointer;
   color: #FFF;
@@ -126,6 +126,3 @@ section {
   transform: scale(1.075);
   transition: 0.3s;
 }
-
-
-
