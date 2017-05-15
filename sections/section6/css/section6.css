@@ -11,10 +11,6 @@ section {
   color: #2a2a2a;
 }
 
-li {
-  list-style: none;
-}
-
 .content-wrapper {
   display: flex;
   flex-direction: column;
@@ -33,7 +29,6 @@ li {
   height: 30px;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   margin: 25px 0;
 }
 
@@ -77,40 +72,60 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
-.tab {
+/* Sponsor Section Styling */
+
+.sponsor-header {
   font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  font-size: 1.4em;
+  font-weight: 600;
+  font-size: 1.2em;
   letter-spacing: 2.4px;
+  color: #1eb8e4;
+}
+
+.speaker-links {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  width: 300px;
+  padding: 20px 21px;
+  margin: 20px 50px;
+  border: 2px #6CC62C solid;
+  background-color: #FFF;
+  color: #6CC62C;
+  transition: 0.5s;
+}
+
+.speaker-links:hover {
+  background-color: #6CC62C;
+  cursor: pointer;
+  color: #FFF;
+  -webkit-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+  box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
+}
+
+#sponsor-links {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 960px;
+  min-height: 500px;
+  align-items: space-around;
+  justify-content: space-around;
+  margin: 10px auto;
+
+}
+
+.sponsor-button img {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.sponsor-button img:hover {
+  transform: scale(1.075);
   transition: 0.3s;
 }
-
-.map-tab-active {
-  font-weight: 600;
-  color: #1eb8e4;
-  text-decoration: underline;
-}
-
-/* Explore Section styling */
-
-#explore-wrapper {
-  width: 100%;
-  text-align: center;
-}
-
-#map-locations {
-  width: 60%;
-  margin-bottom: 30px;
-}
-
-#google-map {
-  width: 90%;
-  height: 600px;
-  margin-bottom: 40px;
-}
-
-
-
 
 
 
