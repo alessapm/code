@@ -82,6 +82,7 @@ li {
   font-weight: 400;
   font-size: 1.4em;
   letter-spacing: 2.4px;
+  transition: 0.3s;
 }
 
 .map-tab-active {
