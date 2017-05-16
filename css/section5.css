@@ -61,15 +61,7 @@ li {
   display: inline;
 }
 
-.nav-to-top {
-  align-self: flex-end;
-  margin-right: 5%;
-}
 
-.nav-to-top img {
-  height: 48px;
-  width: 48px;
-}
 
 .gradient-text {
   background: -webkit-linear-gradient(left, #69c75b,  #10b5e4);
