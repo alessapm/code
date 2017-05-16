@@ -53,8 +53,13 @@ section {
 }
 
 .nav-to-top {
-  align-self: flex-end;
-  margin-right: 5%;
+  position: fixed;
+  right: -15;
+  bottom: 30px;
+  z-index: 10;
+  background-color: white;
+  padding: 0;
+  height: 48px;
 }
 
 .nav-to-top img {
