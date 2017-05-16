@@ -17,8 +17,14 @@ VIDEO CONTROLS
 }
 
 .video {
+<<<<<<< HEAD
   width: 100%;
   height: 400px;
+=======
+  position: relative;
+  width: 100%;
+  height: 93vh;
+>>>>>>> 05741ce970bf2d8854ae40701ea8056b346a16f0
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -46,6 +52,10 @@ VIDEO CONTROLS
   height: 400px;
   opacity: 0.35;
   position: absolute;
+<<<<<<< HEAD
+=======
+  bottom: 0;
+>>>>>>> 05741ce970bf2d8854ae40701ea8056b346a16f0
   background: rgba(16,181,228,1);
   background: -moz-linear-gradient(left, rgba(16,181,228,1) 0%, rgba(105,199,91,1) 100%);
   background: -webkit-gradient(left top, right top, color-stop(0%, rgba(16,181,228,1)), color-stop(100%, rgba(105,199,91,1)));
@@ -64,6 +74,10 @@ TRIANGLE CONTENT
   height: 400px;
   width: 923.5px;
   position: absolute;
+<<<<<<< HEAD
+=======
+  bottom: 0;
+>>>>>>> 05741ce970bf2d8854ae40701ea8056b346a16f0
 }
 
 .triangle img {
@@ -106,7 +120,11 @@ TRIANGLE CONTENT
   text-align: right;
   padding: 10px 3% 10px 20px;
   text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
+<<<<<<< HEAD
   background-color: rgba(16, 181, 228, .75);
+=======
+  background-color: rgba(16, 181, 228, .45);
+>>>>>>> 05741ce970bf2d8854ae40701ea8056b346a16f0
   border-radius: 2px;
 }
 
