@@ -69,6 +69,9 @@ li {
   -webkit-text-fill-color: transparent;
 }
 
+
+/* Explore Section styling */
+
 .tab {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
@@ -82,8 +85,6 @@ li {
   color: #1eb8e4;
   text-decoration: underline;
 }
-
-/* Explore Section styling */
 
 #explore-wrapper {
   width: 100%;
