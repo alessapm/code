@@ -885,28 +885,6 @@ ADMISSIONS
   opacity: 0.85;
 }
 
-/*.garrett {
-  background-image: url("../images/garrett.jpg");
-  background-color: rgba(65,195,233,0.8);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.jessica {
-  background-image: url("../images/JESSICA.jpeg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.abdusalam {
-  background-image: url("../images/ABDUSALAM.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}*/
-
 .ticket-links {
   width: 200px;
   padding: 20px 21px;
@@ -936,6 +914,7 @@ Explore
   font-size: 1.4em;
   letter-spacing: 2.4px;
   transition: 0.3s;
+  list-style: none;
 }
 
 .map-tab-active {
