@@ -9,11 +9,11 @@ section {
 }
 
 #four {
-  /*border: 2px solid orange;*/
+
   display: flex;
   flex-direction: column;
-  width: 1200px;
-  align-items: center;
+  width: 100%;
+  align-content: center;
 }
 
 .section-title {
@@ -54,12 +54,13 @@ section {
  -webkit-text-fill-color: transparent;
 }
 
-.content-wrapper {
+.four-content-wrapper {
   /*border: 2px blue solid;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 75%;
+  align-content: center;
+  width: 60%;
 }
 
 .schedule {
@@ -238,11 +239,3 @@ section {
   margin: 0;
 }
 
-.nav-to-top {
-  align-self: flex-end;
-}
-
-.nav-to-top img {
-  height: 48px;
-  width: 48px;
-}

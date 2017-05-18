@@ -29,47 +29,47 @@
       <img class="nav-logo" src="./images/LOGO/EXPOSEDLogo.Navbar.svg" alt="exposed/2017">
       <div class="nav-links-n-button">
         <ul class="nav-links">
-          <li>ABOUT</li>
-          <li>SPEAKERS</li>
-          <li>SCHEDULE</li>
-          <li>EXPLORE</li>
+          <a href="#about"><li>ABOUT</li></a>
+          <a href="#speakers"><li>SPEAKERS</li></a>
+          <a href="#schedule"><li>SCHEDULE</li></a>
+          <a href="#explore"><li>EXPLORE</li></a>
         </ul>
         <button class="attend">ATTEND</button>
       </div>
     </div>
   </nav>
-<!-- <<<<<<< HEAD -->
+  <div class="nav-spacer"></div>
+  <a id="hero"></a>
   <div class="video-container">
-    <div class="video">
-      <h1>EXPOSED 2017</h1>
-      <iframe id="player"
-        src="https://player.vimeo.com/video/216200545?autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        frameborder="0"
-        webkitallowfullscreen mozallowfullscreen allowfullscreen>
-      </iframe>
-      <div class="overlay"></div>
-      <div class="triangle">
-        <img src="images/exposed-triangle.svg"alt="triangle">
-        <div class="presented-by">
-          <h3>presented by SMLPCT LABS</h3>
-          <p>WORKSHOPS <span class="dot">•</span> PRESENTATIONS <span class="dot">•</span> NETWORKING</p>
+      <div class="video">
+        <h1>EXPOSED 2017</h1>
+        <iframe id="player"
+          src="https://player.vimeo.com/video/216200545?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+          frameborder="0"
+          webkitallowfullscreen mozallowfullscreen allowfullscreen>
+        </iframe>
+        <div class="overlay"></div>
+        <div class="triangle">
+          <img src="./images/exposed-triangle.svg"alt="triangle">
+          <div class="presented-by">
+            <h3>presented by SMLPCT LABS</h3>
+            <p>WORKSHOPS <span class="dot">•</span> PRESENTATIONS <span class="dot">•</span> NETWORKING</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="countdown-container">
-      <div id="countdown">
+      <div class="countdown-container">
+        <div id="countdown">
+        </div>
+        <p>
+          GET YOUR EARLY BIRD<br />
+          TICKET NOW
+        </p>
+        <button class="btn hero-btn">ATTEND</button>
       </div>
-      <p>
-        GET YOUR EARLY BIRD<br />
-        TICKET NOW
-      </p>
-      <button class="btn hero-btn">ATTEND</button>
     </div>
-  </div>
-  <!-- END OF HERO CONTAINER -->
-  <div class="nav-spacer"></div>
   <div class="container">
     <section id="about">
+      <a id="about"></a>
       <div class="section-title">
         <div class="section-title-marker"></div>
         <div class="that-little-ball-thing"></div>
@@ -111,6 +111,7 @@
     </section>
     <div class="container">
       <section id="three">
+        <a id="speakers"></a>
         <div class="section-title">
           <div class="section-title-marker"></div>
           <div class="that-little-ball-thing"></div>
@@ -184,16 +185,17 @@
             <button type="button" name="button">NOMINATE</button>
           </div> <!-- end speaker-links -->
         </div> <!-- end content-wrapper -->
-        <a href="#hero" class="nav-to-top"><img src="./images/section2_images/Up3 Copy.png" /></a>
+
       </section> <!-- end #three -->
     </div>
     <section id="four">
+      <a id="schedule"></a>
       <div class="section-title">
         <div class="section-title-marker"></div>
         <div class="that-little-ball-thing"></div>
         <div class="section-title-text gradient-text">SCHEDULE</div>
       </div>
-      <div class="content-wrapper">
+      <div class="four-content-wrapper">
         <div class="schedule">
           <div class="tabs">
             <p id="day1" class="tab-active">DAY ONE</p>
@@ -367,12 +369,14 @@
           </div>
 
         </div>
+
+        <div class="purchase speaker-links">
         <div class="purchase">
           <h3>$25 PER DAY <span>&#8594;</span></h3>
           <button>PURCHASE</button>
         </div>
       </div>
-      <a href="#hero" class="nav-to-top"><img src="./images/section2_images/Up3 Copy.png" /></a>
+
     </section>
     <section id="admissions">
     <div class="section-title">
@@ -461,6 +465,7 @@
       </div>
     </section>
   </section>
+    <a id="explore"></a>
     <section id="explore">
     <div class="section-title">
       <div class="section-title-marker"></div>
@@ -532,7 +537,7 @@
             <button type="button" name="button" class="speaker-links">BECOME A SPONSOR</button>
           </div>
         </div>
-        <a href="#hero" class="nav-to-top"><img src="./images/section2_images/Up3 Copy.png"/></a>
+
       </div>
     </section>
     <footer>
