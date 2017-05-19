@@ -6,7 +6,7 @@
   <title>EXPOSED - NYC</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
-  <link rel="stylesheet" href="./css/navStyle.css">
+  <!-- <link rel="stylesheet" href="./css/navStyle.css">
   <link rel="stylesheet" href="./css/section1.css">
   <link rel="stylesheet" href="./css/Section2.css">
   <link rel="stylesheet" href="./css/section3.css">
@@ -14,14 +14,15 @@
   <link rel="stylesheet" href="./css/section5.css">
   <link rel="stylesheet" href="./css/section6.css">
   <link rel="stylesheet" href="./css/admission.css">
-  <link rel="stylesheet" href="./css/footer.css">
-  <link rel="stylesheet" href="./css/section7.css">
+  <link rel="stylesheet" href="./css/footer.css"> -->
+  <link rel="stylesheet" href="./css/style.css">
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/section1.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/section3.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/section4.js" type="text/javascript" charset="utf-8"></script>
-  <script src="./js/section5.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/hero.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/speakers.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/schedule.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/maps.js" type="text/javascript" charset="utf-8"></script>
+  <script src="./js/image-gallery.js" type="text/javascript" charset="utf-8"></script>
   <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCsJxHOXmtBvavtbfOIIQu1uyedoaqbD-k&libraries=places"></script>
   <script src="./js/section7.js" type="text/javascript"></script>
 </head>
@@ -184,8 +185,12 @@
             </div> <!-- end carousel -->
           </div> <!-- end carousel-wrapper -->
           <div class="speaker-links">
-            <button type="button" name="button">APPLY TO SPEAK</button>
-            <button type="button" name="button">NOMINATE</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJhtTq-MmUTBvbF8kAhJWwguILehsasicJU8iYsz7G0-KfsA/viewform?usp=sf_link" title="">
+              <button type="button" name="button">APPLY TO SPEAK</button>
+            </a>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJrYR8mHlGjU_uFc1EMymV-deuhOr29CdDRh-a7FEctvNVxA/viewform?usp=sf_link" title="">
+              <button type="button" name="button">NOMINATE</button>
+            </a>
           </div> <!-- end speaker-links -->
         </div> <!-- end content-wrapper -->
 
@@ -537,48 +542,48 @@
             </div>
           </section>
           <div class="sponsor-button-wrapper">
-            <button type="button" name="button" class="speaker-links">BECOME A SPONSOR</button>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSfCEHzAscTA0XGelS_fMI0tWfWF0t1quGI1IJKug22CjekW1A/viewform?usp=sf_link" title="">
+              <button type="button" name="button" class="speaker-links">BECOME A SPONSOR</button>
+            </a>
           </div>
         </div>
-
       </div>
     </section>
     <section>
       <div class="gallery-section">
-      <div class="gallery-container">
-        <div class="row-gallery row-gallery-one">
-          <div  class="gallery-img gallery-img-1">
-            <img id="color1" src="./images/section7_images/gallery1-blue.jpg" alt="">
-          </div>
-          <div class="gallery-images-2-3">
-            <div  class="gallery-img gallery-img-2">
-              <img id="color2" src="./images/section7_images/gallery2-blue.jpg" alt="">
+        <div class="gallery-container">
+          <div class="row-gallery row-gallery-one">
+            <div  class="gallery-img gallery-img-1">
+              <img id="color1" src="./images/section7_images/gallery1-blue.jpg" alt="">
             </div>
-            <div  class="gallery-img gallery-img-3">
-              <img id="color3" src="./images/section7_images/gallery3-blue.jpg" alt="">
+            <div class="gallery-images-2-3">
+              <div  class="gallery-img gallery-img-2">
+                <img id="color2" src="./images/section7_images/gallery2-blue.jpg" alt="">
+              </div>
+              <div  class="gallery-img gallery-img-3">
+                <img id="color3" src="./images/section7_images/gallery3-blue.jpg" alt="">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="row-gallery row-gallery-two">
-          <div  class="gallery-img gallery-img-4">
-            <img id="color4" src="./images/section7_images/gallery4-blue.jpg" alt="">
+          <div class="row-gallery row-gallery-two">
+            <div  class="gallery-img gallery-img-4">
+              <img id="color4" src="./images/section7_images/gallery4-blue.jpg" alt="">
+            </div>
+            <div  class="gallery-img gallery-img-5">
+              <img id="color5" src="./images/section7_images/gallery5-blue.jpg" alt="">
+            </div>
           </div>
-          <div  class="gallery-img gallery-img-5">
-            <img id="color5" src="./images/section7_images/gallery5-blue.jpg" alt="">
-          </div>
-        </div>
-        <div class="row-gallery row-gallery-three">
-          <div  class="gallery-img gallery-img-6">
-            <img id="color6" src="./images/section7_images/gallery6-blue.jpg" alt="">
-          </div>
-          <div  class="gallery-img gallery-img-7">
-            <img id="color7" src="./images/section7_images/gallery7-blue.jpg" alt="">
+          <div class="row-gallery row-gallery-three">
+            <div  class="gallery-img gallery-img-6">
+              <img id="color6" src="./images/section7_images/gallery6-blue.jpg" alt="">
+            </div>
+            <div  class="gallery-img gallery-img-7">
+              <img id="color7" src="./images/section7_images/gallery7-blue.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
-    </div>
     </section>
-
 
     <footer>
       <div class="newsletter-container">
@@ -594,8 +599,8 @@
         </div>
         <div class="footer-links">
           <a href="#">ABOUT US</a> |
-          <a href="#">CONTACT US</a> |
-          <a href="#">SMPLCT LAB</a>
+          <a href="mailto:hello@exposednyc.com">CONTACT US</a> |
+          <a href="http://www.smplctlab.org/">SMPLCT LAB</a>
         </div>
         <p class="copyright">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
       </div>
