@@ -4,6 +4,7 @@ footer {
   color: #FFF;
   display: flex;
   font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
 }
 
 .newsletter-container {
