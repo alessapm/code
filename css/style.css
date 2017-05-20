@@ -615,6 +615,7 @@ SPEAKER STYLING
 .speaker-links {
   width: 80%;
   margin: 0 auto;
+  margin-top: 0 !important;
   text-align: center;
 }
 
@@ -687,7 +688,7 @@ SCHEDULE
 
 
 .event {
-  border: 2px solid #25D432;
+  border: 2px solid #6CC62C;
   display: flex;
   position: relative;
   margin-bottom: 30px;
@@ -919,6 +920,7 @@ Explore
   letter-spacing: 2.4px;
   transition: 0.3s;
   list-style: none;
+  cursor: pointer;
 }
 
 .map-tab-active {
@@ -938,8 +940,8 @@ Explore
 }
 
 #google-map {
-  width: 90%;
-  height: 600px;
+  width: 65%;
+  height: 500px;
   margin-bottom: 40px;
 }
 
@@ -1006,6 +1008,7 @@ Sponsor
   width: 100%;
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .gallery-container {
@@ -1072,6 +1075,7 @@ footer {
   color: #FFF;
   display: flex;
   font-family: 'Raleway', sans-serif;
+  margin-top: 50px;
 }
 
 .newsletter-container {

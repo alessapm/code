@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   //                    variables
   let dropDownSched = document.querySelectorAll('.circle-sched i');
+  let dropDownEvent = document.querySelectorAll('.circle-sched');
   let day1 = document.getElementById('day1');
   let day2 = document.getElementById('day2');
   let day3 = document.getElementById('day3');
@@ -14,11 +15,11 @@ document.addEventListener('DOMContentLoaded', () => {
   //                   click events
 
 // does the drop down for event details
-  for (let i = 0; i< dropDownSched.length; i++){
+  for (let i = 0; i< dropDownEvent.length; i++){
     let clickSched = 0;
     let eventDiv = dropDownSched[i].parentNode.parentNode.parentNode.parentNode
     let detailsP = eventDiv.childNodes[3].childNodes[5];
-    dropDownSched[i].addEventListener('click', () => {
+    dropDownEvent[i].addEventListener('click', () => {
       if (clickSched%2 === 0){
         dropDownSched[i].classList.remove('down-arrow');
         dropDownSched[i].classList.add('up-arrow');

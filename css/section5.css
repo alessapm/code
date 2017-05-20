@@ -78,6 +78,7 @@ li {
   font-size: 1.4em;
   letter-spacing: 2.4px;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 .map-tab-active {
@@ -87,7 +88,7 @@ li {
 }
 
 #explore-wrapper {
-  width: 100%;
+  width: 60%;
   text-align: center;
 }
 
