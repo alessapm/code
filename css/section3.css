@@ -159,21 +159,21 @@
   padding: 0 10px;
   line-height: 1.5em;
   width: 92%;
-  opacity: 0.85;
+  opacity: 0.95;
   background-color: #00ADE5;
   position: absolute;
   bottom: -91px;
-  transition: 0.5s;
+  transition: all 0.5s ease;
 }
 
 .show {
   display: block;
-  transition: 0.5s;
+  transition: all 0.5s ease;
 }
 
 .hide {
   display: none;
-  transition: 0.5s;
+  transition: all 0.5s ease;
 }
 
 .circle-speak {
