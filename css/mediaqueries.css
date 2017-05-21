@@ -94,16 +94,30 @@
 @media (max-width: 950px) {
   .ticket-plan-container {
     width: 250px;
+    /*height: 800px;*/
+  }
+
+  .ticket-plan-info ul {
+  width: 80%;
   }
 }
 
 @media (max-width: 900px) {
-  .nav-logo {
-    transform: scale(1);
+  .nav-links-n-button {
+    display: none;
+    width: 150px;
+  }
+
+  .hamburger {
+    display: inline-block;
   }
 
   .center-container {
     padding: 0;
+  }
+
+  #google-map {
+    width: 680px;
   }
 
   #map-locations {
@@ -127,6 +141,15 @@
 }
 
 @media (max-width: 700px) {
+
+  .four-content-wrapper {
+    width: 75%;
+  }
+
+  #google-map {
+    width: 500px;
+  }
+
   .center-container {
     width: 90%;
   }
@@ -138,8 +161,48 @@
 
 @media (max-width: 625px) {
 
+  .about-headline {
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  #themes-all {
+    flex-direction: column;
+  }
+
+  .theme-single {
+    width: 90%;
+  }
+
+  .theme-headline {
+    margin: 10px auto;
+  }
+
+  .theme-body {
+    margin-top: 0px;
+    line-height: 1.5em;
+  }
+
+  .will-attend,
+  .attendee-text {
+    margin: 10px auto;
+  }
+
+  .attendee-text {
+    margin-bottom: 20px
+  }
+
+  #about-horizontal-rule {
+  margin: 10px auto 0px auto;
+}
+
   #map-locations {
     width: 90%;
+  }
+
+  #google-map {
+    width: 90%;
+    height: 350px;
   }
 
   .tab {
@@ -176,6 +239,29 @@
 
 }
 
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+  }
+
+  .nav-logo {
+    transform: scale(0.9);
+    padding: 0;
+  }
+
+  .hamburger {
+    padding-left: 0;
+  }
+
+  .four-content-wrapper {
+    width: 90%;
+  }
+
+  .nav-to-top {
+    display: none;
+  }
+}
+
 @media (max-width: 460px) {
   .tab {
     font-size: 1em;
@@ -192,6 +278,11 @@
 
 /* Largest smartphone width in portrait */
 @media (max-width: 414px) {
+  .nav-logo {
+    width: 250px;
+  }
+
+
   .section-title-marker {
     display: none;
   }
@@ -205,7 +296,11 @@
   }
 
   .ticket-plan-container {
-    width: 100%;
+    width: 90%;
+  }
+
+  #google-map {
+    height: 50vh;
   }
 
   .sponsor-header {
