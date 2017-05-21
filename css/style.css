@@ -1,10 +1,14 @@
 /******************
 GENERAL FORMATTING
 ******************/
+html {
+  width: 100%;
+}
 
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
+  width: 100%;
 }
 
 h1 {
@@ -845,11 +849,16 @@ ADMISSIONS
 
 .ticket-plan-header {
   width: 95%;
-  margin-bottom: 25px;
+  /*margin-bottom: 15px;*/
 }
 
 .ticket-plan-title {
   text-align: center;
+}
+
+.ticket-plan-title h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .ticket-hr {
@@ -881,7 +890,7 @@ ADMISSIONS
   font-weight: 300;
   color: #FFF;
   padding: 0 10px;
-  line-height: 1.8em;
+  line-height: 1.6em;
   opacity: 0.85;
 }
 
@@ -1067,18 +1076,20 @@ footer {
   height: 190px;
   color: #FFF;
   display: flex;
+  justify-content: space-around;
   font-family: 'Raleway', sans-serif;
 }
 
 .newsletter-container {
-  flex: 1;
+  /*flex: 1;*/
+  width: 25%;
   font-size: .9rem;
   text-align: center;
 }
 
 
 .center-container{
-  flex: 2;
+  width: 50%;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
@@ -1102,6 +1113,13 @@ footer {
   width: 45px;
 }
 
+#footer-logo-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 40%;
+}
+
 .footer-links a{
   text-decoration: none;
   color: #FFF;
@@ -1122,9 +1140,13 @@ footer {
 }
 
 .volunteer-container {
-  flex: 1;
+  width: 25%;
   font-size: .9rem;
   text-align: center;
+}
+
+.mobile-footer {
+  display: none;
 }
 
 .footer-btn {
@@ -1187,3 +1209,26 @@ footer {
   background-image: url("../images/SOCIALMEDIA/Twitter.hover.png");
 }
 
+/**************
+MEDIA QUERIES
+**************/
+
+@media (max-width: 768px) {
+  .video {
+    height: 200px;
+  }
+
+  .overlay {
+    height: 200px;
+  }
+
+  .triangle img {
+    width: 500px;
+  }
+
+  h3, .presented-by {
+    top: 267px;
+    left: 20px;
+    font-size: .85em;
+  }
+}

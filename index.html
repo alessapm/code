@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EXPOSED - NYC</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
@@ -16,6 +17,7 @@
   <link rel="stylesheet" href="./css/admission.css">
   <link rel="stylesheet" href="./css/footer.css"> -->
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaqueries.css">
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/hero.js" type="text/javascript" charset="utf-8"></script>
@@ -586,27 +588,41 @@
     </section>
 
     <footer>
-      <div class="newsletter-container">
+      <div class="newsletter-container desktop-footer">
         <a href="#"><button class="footer-btn">NEWSLETTER</button></a>
         <p>RECIEVE UPDATES, EVENT INFO & <br> SPECIAL OFFERS</p>
       </div>
       <div class="center-container">
         <div class="footer-logos">
           <h2><span class="gradient-text">EXPO</span>SED NYC</h2>
-          <a href="https://instagram.com/exponycfest"><div class="footer-logo" id="footer-insta"></div></a>
-          <a href="https://www.facebook.com/exponycfest"><div class="footer-logo" id="footer-fb"></div></a>
-          <a href="https://twitter.com/exponycfest"><div class="footer-logo" id="footer-twitter"></div></a>
+          <div id="footer-logo-icons">
+            <a href="https://instagram.com/exponycfest"><div class="footer-logo" id="footer-insta"></div></a>
+            <a href="https://www.facebook.com/exponycfest"><div class="footer-logo" id="footer-fb"></div></a>
+            <a href="https://twitter.com/exponycfest"><div class="footer-logo" id="footer-twitter"></div></a>
+          </div>
         </div>
-        <div class="footer-links">
+        <div class="footer-links desktop-footer">
           <a href="#">ABOUT US</a> |
           <a href="mailto:hello@exposednyc.com">CONTACT US</a> |
           <a href="http://www.smplctlab.org/">SMPLCT LAB</a>
         </div>
-        <p class="copyright">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
+        <p class="copyright desktop-footer">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
+      </div>
+      <div class="newsletter-container mobile-footer">
+        <a href="#"><button class="footer-btn">NEWSLETTER</button></a>
+        <p>RECIEVE UPDATES, EVENT INFO & <br> SPECIAL OFFERS</p>
       </div>
       <div class="volunteer-container">
         <a href="#"><button class="footer-btn">VOLUNTEER</button></a>
         <p>CONTRIBUTE TO THE CAUSE <br> BY GETTING INVOLVED</p>
+      </div>
+      <div class="content-wrapper mobile-footer" id="mobile-copyright">
+        <div class="footer-links mobile-footer">
+          <a href="#">ABOUT US</a> |
+          <a href="mailto:hello@exposednyc.com">CONTACT US</a> |
+          <a href="http://www.smplctlab.org/">SMPLCT LAB</a>
+        </div>
+        <p class="copyright mobile-footer">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   </div>
