@@ -126,6 +126,12 @@
 
 }
 
+@media (max-width: 850px) {
+  /*.schedule {
+    width: 100%;
+  }*/
+}
+
 @media (max-width: 800px) {
  #google-map {
   height: 75vh;
@@ -141,11 +147,6 @@
 }
 
 @media (max-width: 700px) {
-
-  .four-content-wrapper {
-    width: 75%;
-  }
-
   #google-map {
     width: 500px;
   }
@@ -239,6 +240,42 @@
 
 }
 
+@media (max-width: 600px) {
+  .tabs {
+    justify-content: space-between;
+  }
+
+  #day1, #day2, #day3 {
+    margin: 0;
+  }
+
+  .event {
+    flex-direction: column;
+    height: 250px;
+  }
+
+  .event-day {
+    visibility: hidden;
+    height: 0px;
+  }
+
+  .event-details {
+    text-align: center;
+  }
+
+  .details-p {
+    line-height: 15px;
+    height: 200px;
+  }
+
+
+  .circle-sched {
+    visibility: hidden;
+    height: 0px;
+  }
+
+}
+
 @media (max-width: 500px) {
   .nav-container {
     width: 100%;
@@ -253,9 +290,6 @@
     padding-left: 0;
   }
 
-  .four-content-wrapper {
-    width: 90%;
-  }
 
   .nav-to-top {
     display: none;
