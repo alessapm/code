@@ -470,10 +470,6 @@ SPEAKER STYLING
   -webkit-transform: rotate(135deg);
 }
 
-.right-arrow, .left-arrow:hover {
-  cursor: pointer;
-}
-
 .speakers {
   width: 100%;
   display: flex;
@@ -1194,3 +1190,4 @@ footer {
   cursor: pointer;
   background-image: url("../images/SOCIALMEDIA/Twitter.hover.png");
 }
+
