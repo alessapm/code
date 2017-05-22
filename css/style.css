@@ -320,8 +320,8 @@ TRIANGLE CONTENT
   color: #EEE;
   position: absolute;
   right: 0;
-  text-align: right;
-  padding: 10px 3% 10px 20px;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
   text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
   background-color: rgba(16, 181, 228, .45);
   border-radius: 2px;
@@ -334,7 +334,7 @@ TRIANGLE CONTENT
 
 #countdown {
   font-size: 2em;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid;
   padding-bottom: 12px;
 }
@@ -693,7 +693,6 @@ SCHEDULE
 ****************/
 
 .four-content-wrapper {
-  /*border: 2px blue solid;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -708,7 +707,6 @@ SCHEDULE
 .tabs {
   display: flex;
   justify-content: center;
-  /*border: 2px pink solid;*/
 }
 
 .tabs p {
@@ -740,9 +738,21 @@ SCHEDULE
 .event {
   border: 2px solid #6CC62C;
   display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 30px;
   transition: height .5s;
+}
+
+.event-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.details-p {
+  padding: 0 5%;
 }
 
 .event-time {
@@ -756,7 +766,8 @@ SCHEDULE
 }
 
 .inactive {
-  visibility: hidden;
+  /*visibility: hidden;*/
+  display: none;
   line-height: .1px;
 }
 
