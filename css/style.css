@@ -193,7 +193,11 @@ nav a {
 
 .dropdown-menu .attend {
   border: solid 3px black;
+}
+
+.dropdown-menu .attend a {
   color: #000;
+  font-weight: 500;
 }
 
 ul[class="nav-links"] {
