@@ -133,6 +133,10 @@
   #day1, #day2, #day3 {
     margin: 0;
   }
+
+  .gallery-container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -274,6 +278,18 @@
     width: 90%;
   }
 
+
+  .row-gallery-one {
+    width: 60%;
+  }
+
+  .row-gallery-two {
+    width: 40%;
+  }
+
+  .row-gallery-three {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -293,6 +309,15 @@
 
   .nav-to-top {
     display: none;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .row-gallery-one,
+  .row-gallery-two {
+    width: 100%;
   }
 
 }
