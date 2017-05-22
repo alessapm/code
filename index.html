@@ -3,20 +3,15 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EXPOSED - NYC</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400,600,700" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
-  <!-- <link rel="stylesheet" href="./css/navStyle.css">
-  <link rel="stylesheet" href="./css/section1.css">
-  <link rel="stylesheet" href="./css/Section2.css">
-  <link rel="stylesheet" href="./css/section3.css">
-  <link rel="stylesheet" href="./css/section4.css">
-  <link rel="stylesheet" href="./css/section5.css">
-  <link rel="stylesheet" href="./css/section6.css">
-  <link rel="stylesheet" href="./css/admission.css">
-  <link rel="stylesheet" href="./css/footer.css"> -->
+  <link rel="stylesheet"  href="./css/hamburgers.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/mediaqueries.css">
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
+  <script src="./js/hamburgers.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/hero.js" type="text/javascript" charset="utf-8"></script>
   <script src="./js/speakers.js" type="text/javascript" charset="utf-8"></script>
@@ -37,8 +32,13 @@
           <a href="#schedule"><li>SCHEDULE</li></a>
           <a href="#explore"><li>EXPLORE</li></a>
         </ul>
-        <button class="attend">ATTEND</button>
+        <button class="attend"><a href="#attend">ATTEND</a></button>
       </div>
+      <button class="hamburger hamburger--spring" type="button">
+        <span class="hamburger-box">
+          <span class="hamburger-inner"></span>
+        </span>
+      </button>
     </div>
   </nav>
   <div class="nav-spacer"></div>
@@ -63,14 +63,13 @@
       <div class="countdown-container">
         <div id="countdown">
         </div>
-        <p>
-          GET YOUR EARLY BIRD<br />
-          TICKET NOW
-        </p>
-        <button class="btn hero-btn">ATTEND</button>
+          <p>
+            GET YOUR EARLY BIRD<br />
+            TICKET NOW
+          </p>
+          <button class="btn hero-btn">ATTEND</button>
       </div>
     </div>
-
   <div class="container">
     <section id="about">
       <a id="about"></a>
@@ -105,7 +104,7 @@
             <p class="theme-body">Explore methods to decrease your environmental footprint and increase your social impact.</p>
           </div>
         </section>
-        <div class="hr"></div>
+        <div class="hr" id="about-horizontal-rule"></div>
         <h3 class="will-attend">WHO WILL ATTEND?</h3>
         <h3 class="attendee-text gradient-text">#YOU</h3>
         </div>
@@ -124,7 +123,7 @@
         <div class="content-wrapper">
           <div class="carousel-wrapper">
             <div class="speaker-carousel">
-              <a><p><i class="left-arrow"></i></p></a>
+              <a><p><i class="carousel-button left-arrow"></i></p></a>
               <div class="speakers">
                 <div class="speaker-box garrett">
                   <div class="speaker-description">
@@ -180,8 +179,62 @@
                     </div>
                   </a>
                 </div> <!-- end speaker 3 -->
+                <div class="speaker-box jessica">
+                  <div class="speaker-description">
+                    <h3>JESSICA MINHAS</h3>
+                    <ul>
+                      <li>Author, Advocate, Entreprenuer</li>
+                      <li>I'll Go First</li>
+                      <li>Human Rights</li>
+                    </ul>
+                    <div class="expanded hide">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                  <a>
+                    <div class="circle-speak">
+                      <p><i class="down-arrow"></i></p>
+                    </div>
+                  </a>
+                </div> <!-- end speaker 4 -->
+                <div class="speaker-box garrett">
+                  <div class="speaker-description">
+                    <h3>GARRETT BROAD</h3>
+                    <ul>
+                      <li>Author & Professor</li>
+                      <li>Fordham University</li>
+                      <li>Social Impact/Sustainability</li>
+                    </ul>
+                    <div class="expanded hide">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                  <a>
+                    <div class="circle-speak">
+                      <p><i class="down-arrow"></i></p>
+                    </div>
+                  </a>
+                </div> <!-- end speaker 5 -->
+                <div class="speaker-box abdusalam">
+                  <div class="speaker-description">
+                    <h3>ABDUSALAM ABAJEBEL</h3>
+                    <ul>
+                      <li>Owner/Operator</li>
+                      <li>Oasis Jimma Juice Bar</li>
+                      <li>Juicing</li>
+                    </ul>
+                    <div class="expanded hide">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                  </div>
+                  <a>
+                    <div class="circle-speak">
+                      <p><i class="down-arrow"></i></p>
+                    </div>
+                  </a>
+                </div> <!-- end speaker 6 -->
               </div> <!-- end speakers div -->
-              <a><p><i class="right-arrow"></i></p></a>
+              <a><p><i class="carousel-button right-arrow"></i></p></a>
             </div> <!-- end carousel -->
           </div> <!-- end carousel-wrapper -->
           <div class="speaker-links">
@@ -211,186 +264,207 @@
             <p id="day3">DAY THREE</p>
           </div>
           <div class="event day1 view-day">
-            <div class="event-time">
-              <p>9:00 AM</p>
-              <p>MAIN ROOM</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>9:00 AM</p>
+                <p>MAIN ROOM</p>
+              </div>
+              <div class="event-details">
+                <h3>OPENING RECEPTION</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 1</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>OPENING RECEPTION</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 1</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day1 view-day">
-            <div class="event-time">
-              <p>10:30AM</p>
-              <p>ROOM B</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>10:30AM</p>
+                <p>ROOM B</p>
+              </div>
+              <div class="event-details">
+                <h3>NETWORKING EVENT</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 1</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>NETWORKING EVENT</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 1</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day1 view-day">
-            <div class="event-time">
-              <p>3:00pm</p>
-              <p>MAIN ROOM</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>3:00pm</p>
+                <p>MAIN ROOM</p>
+              </div>
+              <div class="event-details">
+                <h3>SUSTAINABILITY IN THE WORKPLACE</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 1</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>SUSTAINABILITY IN THE WORKPLACE</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 1</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
-          <div class="event day1 view-day">
-            <div class="event-time">
-              <p>5:00pm</p>
-              <p>MAIN ROOM</p>
+          <div class="event day1 view-day" id="eventtest">
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>5:00pm</p>
+                <p>MAIN ROOM</p>
+              </div>
+              <div class="event-details">
+                <h3>THE CULTURE OF SPICES</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 1</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>THE CULTURE OF SPICES</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 1</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
-          </div>
-          <div class="event day2 hide-day">
-            <div class="event-time">
-              <p>9:00 AM</p>
-              <p>BALLROOM</p>
-            </div>
-            <div class="event-details">
-              <h3>OPENING RECEPTION</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 2</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day2 hide-day">
-            <div class="event-time">
-              <p>9:00 AM</p>
-              <p>BALLROOM</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>9:00 AM</p>
+                <p>BALLROOM</p>
+              </div>
+              <div class="event-details">
+                <h3>OPENING RECEPTION</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 2</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>PANEL: HEALTH & WEALTH</h3>
-              <p>Speaker Name</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 2</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day2 hide-day">
-            <div class="event-time">
-              <p>11:00 AM</p>
-              <p>CAFETERIA</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>9:00 AM</p>
+                <p>BALLROOM</p>
+              </div>
+              <div class="event-details">
+                <h3>PANEL: HEALTH & WEALTH</h3>
+                <p>Speaker Name</p>
+              </div>
+              <div class="event-day"><p>Day 2</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>ELEGANT SEAFOOD BUFFET</h3>
-              <p>Chef Guy Fieri</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
+          </div>
+          <div class="event day2 hide-day">
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>11:00 AM</p>
+                <p>CAFETERIA</p>
+              </div>
+              <div class="event-details">
+                <h3>ELEGANT SEAFOOD BUFFET</h3>
+                <p>Chef Guy Fieri</p>
+              </div>
+              <div class="event-day"><p>Day 2</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-day"><p>Day 2</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
            <div class="event day3 hide-day">
-            <div class="event-time">
-              <p>1:00 AM</p>
-              <p>LOUNGE A</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>1:00 AM</p>
+                <p>LOUNGE A</p>
+              </div>
+              <div class="event-details">
+                <h3>LATE NIGHT COCKTAIL HOUR</h3>
+                <p>SPEAKER NAME</p>
+              </div>
+              <div class="event-day"><p>Day 3</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>LATE NIGHT COCKTAIL HOUR</h3>
-              <p>SPEAKER NAME</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 3</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day3 hide-day">
-            <div class="event-time">
-              <p>1:00 AM</p>
-              <p>LOUNGE A</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>1:00 AM</p>
+                <p>LOUNGE A</p>
+              </div>
+              <div class="event-details">
+                <h3>LATE NIGHT COCKTAIL HOUR</h3>
+                <p>SPEAKER NAME</p>
+              </div>
+              <div class="event-day"><p>Day 3</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>LATE NIGHT COCKTAIL HOUR</h3>
-              <p>SPEAKER NAME</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 3</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day3 hide-day">
-            <div class="event-time">
-              <p>1:00 AM</p>
-              <p>LOUNGE B</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>1:00 AM</p>
+                <p>LOUNGE B</p>
+              </div>
+              <div class="event-details">
+                <h3>SCARY MOVIE NIGHT</h3>
+                <p>SPEAKER NAME</p>
+              </div>
+              <div class="event-day"><p>Day 3</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>SCARY MOVIE NIGHT</h3>
-              <p>SPEAKER NAME</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 3</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
           <div class="event day3 hide-day">
-            <div class="event-time">
-              <p>1:00 AM</p>
-              <p>LOUNGE B</p>
+            <div class="event-header-container">
+              <div class="event-time">
+                <p>1:00 AM</p>
+                <p>LOUNGE B</p>
+              </div>
+              <div class="event-details">
+                <h3>SCARY MOVIE NIGHT</h3>
+                <p>SPEAKER NAME</p>
+              </div>
+              <div class="event-day"><p>Day 3</p></div>
+              <div class="circle-sched">
+                <a><p><i class="down-arrow"></i></p></a>
+              </div>
             </div>
-            <div class="event-details">
-              <h3>SCARY MOVIE NIGHT</h3>
-              <p>SPEAKER NAME</p>
-              <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
-            </div>
-            <div class="event-day"><p>Day 3</p></div>
-            <div class="circle-sched">
-              <a><p><i class="down-arrow"></i></p></a>
-            </div>
+            <p class="details-p inactive">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus finibus arcu quis aliquet vulputate. Sed finibus nibh diam, et sodales sapien luctus ut. Quisque tristique, turpis eu consequat maximus</p>
           </div>
-
-        </div>
 
         <div class="purchase speaker-links">
         <div class="purchase">
-          <h3>$25 PER DAY <span>&#8594;</span></h3>
+
           <button>PURCHASE</button>
         </div>
       </div>
 
     </section>
     <section id="admissions">
+    <a id="attend"></a>
     <div class="section-title">
       <div class="section-title-marker"></div>
       <div class="that-little-ball-thing"></div>
-      <div class="section-title-text gradient-text">ADMISSION</div>
+      <div class="section-title-text gradient-text">ATTEND</div>
     </div>
     <section id="admission-plans">
       <div class="ticket-plan-container">
@@ -586,27 +660,41 @@
     </section>
 
     <footer>
-      <div class="newsletter-container">
+      <div class="newsletter-container desktop-footer">
         <a href="#"><button class="footer-btn">NEWSLETTER</button></a>
         <p>RECIEVE UPDATES, EVENT INFO & <br> SPECIAL OFFERS</p>
       </div>
       <div class="center-container">
         <div class="footer-logos">
           <h2><span class="gradient-text">EXPO</span>SED NYC</h2>
-          <a href="https://instagram.com/exponycfest"><div class="footer-logo" id="footer-insta"></div></a>
-          <a href="https://www.facebook.com/exponycfest"><div class="footer-logo" id="footer-fb"></div></a>
-          <a href="https://twitter.com/exponycfest"><div class="footer-logo" id="footer-twitter"></div></a>
+          <div id="footer-logo-icons">
+            <a href="https://instagram.com/exponycfest"><div class="footer-logo" id="footer-insta"></div></a>
+            <a href="https://www.facebook.com/exponycfest"><div class="footer-logo" id="footer-fb"></div></a>
+            <a href="https://twitter.com/exponycfest"><div class="footer-logo" id="footer-twitter"></div></a>
+          </div>
         </div>
-        <div class="footer-links">
+        <div class="footer-links desktop-footer">
           <a href="#">ABOUT US</a> |
           <a href="mailto:hello@exposednyc.com">CONTACT US</a> |
           <a href="http://www.smplctlab.org/">SMPLCT LAB</a>
         </div>
-        <p class="copyright">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
+        <p class="copyright desktop-footer">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
+      </div>
+      <div class="newsletter-container mobile-footer">
+        <a href="#"><button class="footer-btn">NEWSLETTER</button></a>
+        <p>RECIEVE UPDATES, EVENT INFO & <br> SPECIAL OFFERS</p>
       </div>
       <div class="volunteer-container">
         <a href="#"><button class="footer-btn">VOLUNTEER</button></a>
         <p>CONTRIBUTE TO THE CAUSE <br> BY GETTING INVOLVED</p>
+      </div>
+      <div class="content-wrapper mobile-footer" id="mobile-copyright">
+        <div class="footer-links mobile-footer">
+          <a href="#">ABOUT US</a> |
+          <a href="mailto:hello@exposednyc.com">CONTACT US</a> |
+          <a href="http://www.smplctlab.org/">SMPLCT LAB</a>
+        </div>
+        <p class="copyright mobile-footer">EXPOSED © COPYRIGHT 2017 - ALL RIGHTS RESERVED</p>
       </div>
     </footer>
   </div>
