@@ -251,11 +251,10 @@
 
   .event {
     flex-direction: column;
-    height: 250px;
   }
 
   .event-day {
-    visibility: hidden;
+    display: none;
     height: 0px;
   }
 
@@ -266,12 +265,6 @@
   .details-p {
     line-height: 15px;
     height: 200px;
-  }
-
-
-  .circle-sched {
-    visibility: hidden;
-    height: 0px;
   }
 
 }
