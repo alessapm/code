@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var gallerySlide = ["color1", "color2", "color3", "color4", "color5", "color6", "color7"]
 
-  if (document.documentElement.clientWidth > 800 && document.documentElement.clientHeight > 600) {
+  if (document.documentElement.clientWidth > 800) {
     for (let i=0; i< gallerySlide.length; i++) {
       let image = document.getElementById(gallerySlide[i]);
 
