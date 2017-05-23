@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if ( distance >= 70 ) {
       document.getElementById("countdown").innerHTML = days + "<br>left for early bird";
     } else if ( distance > 0 ) {
-      document.getElementById("countdown").innerHTML = days "<br> until EXPIRED";
+      document.getElementById("countdown").innerHTML = days "<br>until EXPIRED";
     } else ( distance < 0 ) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "EXPIRED";
