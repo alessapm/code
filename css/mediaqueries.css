@@ -227,22 +227,13 @@
   }
 
   .countdown-container {
-    margin-top: 20px;
-    font-size: .8em;
     top: 80px;
   }
 
   #countdown {
+    font-size: 1.2em;
     border-bottom: 0px;
     padding: 0;
-  }
-
-  #countdown span {
-    display: none;
-  }
-
-  .countdown-container p {
-    display: none;
   }
 
   .countdown-container button {
@@ -269,8 +260,8 @@
   }
 
   .hero-container-mobile p {
-    color: rgba(255,255,255,.95);
-    text-shadow: 1px 1px 10px rgba(17, 84, 117, .85);
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 4px rgba(17, 84, 117, 1);
   }
 
 }

@@ -20,11 +20,6 @@ section {
   color: #2a2a2a;
 }
 
-.anchor {
-  position: relative;
-  bottom: 80px;
-}
-
 /*********************
 GENERIC CLASSES
 **********************/
@@ -328,7 +323,7 @@ TRIANGLE CONTENT
   color: #EEE;
   position: absolute;
   right: 0;
-  top: 20%;
+  top: 25%;
   text-align: center;
   padding: 10px 20px 10px 20px;
   text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
@@ -339,7 +334,7 @@ TRIANGLE CONTENT
 
 .countdown-container p {
   margin: 12px 0 8px 0;
-  font-size: .9em;
+  /*font-size: 1em;*/
 }
 
 #countdown {
@@ -347,11 +342,6 @@ TRIANGLE CONTENT
   text-align: center;
   border-bottom: 1px solid;
   padding-bottom: 12px;
-}
-
-#countdown span {
-  font-size: .8em;
-  font-weight: 100;
 }
 
 .thirty-five-percent-off {
@@ -367,6 +357,7 @@ TRIANGLE CONTENT
   width: inherit;
   padding: 10px 15px;
   margin: inherit;
+  margin-top: 10px;
   border: 2px rgba(16, 181, 228, 1) solid;
   background-color: #FFF;
   color: rgba(16, 181, 228, 1);
