@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-  console.log('script loaded');
+document.addEventListener('DOMContentLoaded', function() {
 
   //                    variables
   let dropDownSched = document.querySelectorAll('.circle-sched i');

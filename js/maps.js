@@ -5,8 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
   var mapLocations = document.querySelector('#map-locations');
   var googleMap = document.querySelector('#google-map');
 
-  console.log('App.js connected!');
-
   var map;
   var googleMapWindow;
   var exposedVenue = {lat: 40.720583, lng: -74.001472};
