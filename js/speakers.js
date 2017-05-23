@@ -32,9 +32,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Old Carousel functionality
+  // Carousel functionality
 
-  var currentSpeakers = [];
+  // This array contains all speaker info. Cards are generated dynamically based on this.
+
   var speakers = [
     {
       first: 'GARRETT',
@@ -57,23 +58,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
   ]
 
+  // Starting point for assigning cards.
   var speakerGalleryPosition = 0;
 
+  // This function displays speakers based on speaker array and starting position.
   var displaySpeakers = function(gallery) {
 
-    var numberOfSpeakerBoxes;
+    // Used to reference starting point while assigned speaker cards
     var currentCard = speakerGalleryPosition;
+    // Clears master speaker container
     speakerMasterContainer.innerHTML = '';
 
-    if (document.documentElement.clientWidth > 950) {
-      numberOfSpeakerBoxes = 3;
-    } else if (document.documentElement.clientWidth > 700) {
-      numberOfSpeakerBoxes = 2;
-    } else {
-      numberOfSpeakerBoxes = 1;
-    }
-
-    for (x = 0; x < numberOfSpeakerBoxes; x++) {
+    for (x = 0; x < 3; x++) {
       var speakerCard = speakers[currentCard];
       console.log('Creating ' + speakerCard.first);
       var boxID = x+1;
