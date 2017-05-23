@@ -20,12 +20,12 @@ document.addEventListener('DOMContentLoaded', function() {
         arrows[y].classList.add('up-arrow');
         arrows[y].classList.remove('down-arrow');
       } else {
-          click = 0;
-          dropdowns[y].classList.remove('show');
-          dropdowns[y].classList.add('hide');
-          links.style.marginTop = '0';
-          arrows[y].classList.remove('up-arrow')
-          arrows[y].classList.add('down-arrow')
+        click = 0;
+        dropdowns[y].classList.remove('show');
+        dropdowns[y].classList.add('hide');
+        links.style.marginTop = '0';
+        arrows[y].classList.remove('up-arrow');
+        arrows[y].classList.add('down-arrow');
       };
     });
   }
@@ -92,11 +92,11 @@ document.addEventListener('DOMContentLoaded', function() {
       } else {
         speakerGalleryPosition === speakers.length - 1 ?
           speakerGalleryPosition = 0 :
-          speakerGalleryPosition ++;
+          speakerGalleryPosition++;
       }
 
       displaySpeakers();
-    })
-  })
+    });
+  });
 
-})
+});
