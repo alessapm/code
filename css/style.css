@@ -189,7 +189,11 @@ nav a {
 
 .dropdown-menu .attend {
   border: solid 3px black;
+}
+
+.dropdown-menu .attend a {
   color: #000;
+  font-weight: 500;
 }
 
 ul[class="nav-links"] {
@@ -375,6 +379,11 @@ TRIANGLE CONTENT
   box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
 }
 
+.hero-btn a:hover {
+  cursor: pointer;
+  color: #FFF;
+}
+
 /************************
 ABOUT SECTION
 ************************/
@@ -464,12 +473,25 @@ ABOUT SECTION
   font-size: 1.5em;
   line-height: 2.4em;
   letter-spacing: 2.4px;
+  margin: 0;
 }
 
 .attendee-text {
   font-family: 'Raleway', sans-serif,
   font-weight: 600;
   font-size: 1.5em;
+  animation-name: attendee-fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes attendee-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
 }
 
 /*********************
@@ -735,7 +757,6 @@ SCHEDULE
   font-family: 'Raleway', sans-serif;
 }
 
-
 .event {
   border: 2px solid #6CC62C;
   display: flex;
@@ -767,7 +788,6 @@ SCHEDULE
 }
 
 .inactive {
-  /*visibility: hidden;*/
   display: none;
   line-height: .1px;
 }
@@ -775,6 +795,7 @@ SCHEDULE
 .active {
   visibility: visible !important;
   line-height: 1em !important;
+  margin-bottom: 40px;
 }
 
 .event-day {
@@ -782,7 +803,6 @@ SCHEDULE
   text-align: center;
   padding-right: 10px;
 }
-
 
 .purchase {
   display: flex;
@@ -840,7 +860,6 @@ SCHEDULE
   -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
 }
-
 
 .circle-sched {
   background-color: #FFFFFF;
