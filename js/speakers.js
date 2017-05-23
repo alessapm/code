@@ -8,28 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   var carouselButtons = document.querySelectorAll('.carousel-button');
 
-  // More info functionality
-  // for (var y = 0; y < dropdownButtons.length; y++) {
-  //   var click = 0;
-  //   dropdownButtons[y].addEventListener('click', () => {
-  //     click += 1;
-  //     if((click%2) !== 0) {
-  //       dropdowns[y].classList.add('show');
-  //       dropdowns[y].classList.remove('hide');
-  //       links.style.marginTop= '100px';
-  //       arrows[y].classList.add('up-arrow');
-  //       arrows[y].classList.remove('down-arrow');
-  //     } else {
-  //       click = 0;
-  //       dropdowns[y].classList.remove('show');
-  //       dropdowns[y].classList.add('hide');
-  //       links.style.marginTop = '0';
-  //       arrows[y].classList.remove('up-arrow');
-  //       arrows[y].classList.add('down-arrow');
-  //     };
-  //   });
-  // }
-
   // Carousel functionality
 
   // This array contains all speaker info. Cards are generated dynamically based on this.
