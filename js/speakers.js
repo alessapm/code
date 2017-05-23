@@ -6,9 +6,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var speakerBox = document.querySelectorAll('.speaker-box');
   var speakerMasterContainer = document.querySelector('.speakers');
 
-  var carouselButtons = document.querySelectorAll('.carousel-button')
-
-  console.log('FUUUUUUCK');
+  var carouselButtons = document.querySelectorAll('.carousel-button');
 
   // More info functionality
   for (var y = 0; y < dropdownButtons.length; y++) {
