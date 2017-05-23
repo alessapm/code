@@ -20,6 +20,11 @@ section {
   color: #2a2a2a;
 }
 
+.anchor {
+  position: relative;
+  bottom: 80px;
+}
+
 /*********************
 GENERIC CLASSES
 **********************/
@@ -1092,6 +1097,10 @@ Sponsor
 }
 
 /***** Gallery ****/
+
+#gallery-title {
+  margin-top: 40px;
+}
 
 .gallery-section {
   width: 100%;
