@@ -95,7 +95,6 @@
 @media (max-width: 950px) {
   .ticket-plan-container {
     width: 250px;
-    /*height: 800px;*/
   }
 
   .ticket-plan-info ul {
@@ -140,9 +139,17 @@
 }
 
 @media (max-width: 850px) {
-  /*.schedule {
-    width: 100%;
-  }*/
+  .tabs {
+    justify-content: space-between;
+  }
+
+  #day1, #day2, #day3 {
+    margin: 0;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 800px) {
@@ -352,6 +359,22 @@
     height: 200px;
   }
 
+  .four-content-wrapper {
+    width: 90%;
+  }
+
+
+  .row-gallery-one {
+    width: 60%;
+  }
+
+  .row-gallery-two {
+    width: 40%;
+  }
+
+  .row-gallery-three {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
@@ -372,12 +395,26 @@
   .nav-to-top {
     display: none;
   }
+
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .row-gallery-one,
+  .row-gallery-two {
+    width: 100%;
+  }
+
 }
 
 @media (max-width: 460px) {
   .tab {
     font-size: 1em;
     letter-spacing: 0.8px;
+  }
+
+  .tabs {
+    font-size: 0.9em;
   }
 
   .sponsor-button img,
