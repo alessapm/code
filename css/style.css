@@ -11,10 +11,6 @@ body {
   width: 100%;
 }
 
-h1 {
-  display: none;
-}
-
 section {
   position: relative;
   display: flex;
@@ -277,6 +273,9 @@ VIDEO CONTROLS
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10b5e4', endColorstr='#69c75b', GradientType=1 );
 }
 
+.hero-container-mobile {
+  display: none;
+}
 
 /*********************
 TRIANGLE CONTENT
@@ -324,11 +323,13 @@ TRIANGLE CONTENT
   color: #EEE;
   position: absolute;
   right: 0;
+  top: 20%;
   text-align: center;
   padding: 10px 20px 10px 20px;
   text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
   background-color: rgba(16, 181, 228, .45);
   border-radius: 2px;
+  z-index: 100;
 }
 
 .countdown-container p {
@@ -1299,24 +1300,3 @@ footer {
 /**************
 MEDIA QUERIES
 **************/
-
-@media (max-width: 768px) {
-  .video {
-    height: 200px;
-  }
-
-  .overlay {
-    height: 200px;
-  }
-
-  .triangle img {
-    width: 500px;
-  }
-
-  h3, .presented-by {
-    top: 267px;
-    left: 20px;
-    font-size: .85em;
-  }
-}
-
