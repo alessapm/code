@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Set the date we're counting down to
   var countDownDate = new Date("Nov 9, 2017 18:00:00").getTime();
-
+  
  // Update the count down every 1 second
   var x = setInterval(function() {
 
@@ -18,8 +18,13 @@ document.addEventListener("DOMContentLoaded", function() {
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
    // Display the result in the element with id="demo"
-    document.getElementById("countdown").innerHTML = days + " days<br/> <span>until EXPOSED!</span>" ;
-    if (distance < 0) {
+    document.getElementById("countdown").innerHTML = days + " days";
+
+    if ( distance >= 70 ) {
+      document.getElementById("countdown").innerHTML = days + "<br /> left for early bird>";
+    } else if ( distance > 0 ) {
+      document.getElementById("countdown").innerHTML = days "<br /> until EXPOSED";
+    } else ( distance < 0 ) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "EXPIRED";
     }
