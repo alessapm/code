@@ -100,6 +100,10 @@
   .ticket-plan-info ul {
   width: 80%;
   }
+
+  #speaker-box-3 {
+    display: none;
+  }
 }
 
 @media (max-width: 900px) {
@@ -241,6 +245,10 @@
 @media (max-width: 700px) {
   #google-map {
     width: 500px;
+  }
+
+  #speaker-box-2 {
+    display: none;
   }
 
   .center-container {
