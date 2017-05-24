@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EXPOSED - NYC</title>
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400|Raleway:300,400,600,700" rel="stylesheet">
-  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/normalize.min.css">
   <link rel="stylesheet"  href="./css/hamburgers.css">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.min.css">
   <link rel="stylesheet" href="./css/mediaqueries.css">
   <script src="https://f.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="./js/hamburgers.js" type="text/javascript" charset="utf-8"></script>
@@ -115,35 +115,32 @@
     </section>
   </div> <!-- End "About" Content -->
 
-  <div class="container">
-    <section id="three">
-      <a id="speakers"></a>
-      <div class="section-title">
-        <div class="section-title-marker"></div>
-        <div class="that-little-ball-thing"></div>
-        <div class="section-title-text gradient-text">SPEAKERS</div>
-      </div>
-      <div class="content-wrapper">
-        <div class="carousel-wrapper">
-          <div class="speaker-carousel">
-            <a><p><i class="carousel-button left-arrow"></i></p></a>
-            <div class="speakers">
-            </div> <!-- end speakers div -->
-            <a><p><i class="carousel-button right-arrow"></i></p></a>
-          </div> <!-- end carousel -->
-        </div> <!-- end carousel-wrapper -->
-        <div class="speaker-links">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJhtTq-MmUTBvbF8kAhJWwguILehsasicJU8iYsz7G0-KfsA/viewform?usp=sf_link" title="">
-            <button type="button" name="button">APPLY TO SPEAK</button>
-          </a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJrYR8mHlGjU_uFc1EMymV-deuhOr29CdDRh-a7FEctvNVxA/viewform?usp=sf_link" title="">
-            <button type="button" name="button">NOMINATE</button>
-          </a>
-        </div> <!-- end speaker-links -->
-      </div> <!-- end content-wrapper -->
+  <section id="three">
+    <div class="section-title">
+      <div class="section-title-marker"></div>
+      <div class="that-little-ball-thing"></div>
+      <div class="section-title-text gradient-text">SPEAKERS</div>
+    </div>
+    <div class="content-wrapper" id="carousel-content">
+      <div class="carousel-wrapper">
+        <div class="speaker-carousel">
+          <a><p><i class="carousel-button left-arrow" id="left-arrow"></i></p></a>
+          <div class="speakers">
+          </div> <!-- end speakers div -->
+          <a><p><i class="carousel-button right-arrow" id="right-arrow"></i></p></a>
+        </div> <!-- end carousel -->
+      </div> <!-- end carousel-wrapper -->
+      <div class="speaker-links" id="speaker-button">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJhtTq-MmUTBvbF8kAhJWwguILehsasicJU8iYsz7G0-KfsA/viewform?usp=sf_link" title="">
+          <button type="button" name="button">APPLY TO SPEAK</button>
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeJrYR8mHlGjU_uFc1EMymV-deuhOr29CdDRh-a7FEctvNVxA/viewform?usp=sf_link" title="">
+          <button type="button" name="button">NOMINATE</button>
+        </a>
+      </div> <!-- end speaker-links -->
+    </div> <!-- end content-wrapper -->
 
     </section> <!-- end #three -->
-  </div>
     <section id="four">
       <a id="schedule"></a>
       <div class="section-title">
@@ -380,6 +377,7 @@
           </div>
 
         <div class="purchase speaker-links">
+        <a id="attend"></a>
         <div class="purchase">
 
           <button>PURCHASE</button>
@@ -388,7 +386,6 @@
 
     </section>
     <section id="admissions">
-    <a id="attend"></a>
     <div class="section-title">
       <div class="section-title-marker"></div>
       <div class="that-little-ball-thing"></div>
@@ -475,8 +472,8 @@
       </div>
     </section>
   </section>
+  <section id="explore">
     <a id="explore"></a>
-    <section id="explore">
     <div class="section-title">
       <div class="section-title-marker"></div>
       <div class="that-little-ball-thing"></div>
@@ -552,6 +549,7 @@
       </div>
     </section>
     <section>
+      <h1 id="gallery-title">EXPOSED 2016</h1>
       <div class="gallery-section">
         <div class="gallery-container">
           <div class="row-gallery row-gallery-one">
