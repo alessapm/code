@@ -1,6 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-
-  console.log('script loaded');
+document.addEventListener('DOMContentLoaded', function() {
 
   //                    variables
   let dropDownSched = document.querySelectorAll('.circle-sched i');
@@ -17,8 +15,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // does the drop down for event details
   for (let i = 0; i< dropDownEvent.length; i++){
     let clickSched = 0;
-    let eventDiv = dropDownSched[i].parentNode.parentNode.parentNode.parentNode
-    let detailsP = eventDiv.childNodes[3].childNodes[5];
+    let eventDiv = dropDownSched[i].parentNode.parentNode.parentNode.parentNode.parentNode;
+    let detailsP = eventDiv.childNodes[3];
     dropDownEvent[i].addEventListener('click', () => {
       if (clickSched%2 === 0){
         dropDownSched[i].classList.remove('down-arrow');
@@ -28,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         detailsP.classList.remove('inactive');
         detailsP.classList.add('active');
 
-        eventDiv.setAttribute("style", "height:200px;background-color:#00ACE9;color:#FFFFFF;border:none");
+        eventDiv.setAttribute("style", "background-color:#00ACE9;color:#FFFFFF;border:none");
 
       } else {
         dropDownSched[i].classList.remove('up-arrow');
@@ -38,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
         detailsP.classList.remove('active');
         detailsP.classList.add('inactive');
 
-        eventDiv.setAttribute("style", "height:120px;background-color:#FFFFFF; color:#5C5C5C;border:2px solid #25D432");
+        eventDiv.setAttribute("style", "background-color:#FFFFFF; color:#5C5C5C;border:2px solid #25D432");
       }
 
     }) //close dropDownSched click event

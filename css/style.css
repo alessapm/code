@@ -1,14 +1,14 @@
 /******************
 GENERAL FORMATTING
 ******************/
+html {
+  width: 100%;
+}
 
 body {
   margin: 0;
   font-family: 'Raleway', sans-serif;
-}
-
-h1 {
-  display: none;
+  width: 100%;
 }
 
 section {
@@ -146,6 +146,56 @@ nav a {
   justify-content: flex-end;
 }
 
+.dropdown-menu {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  top: 80px;
+  right: 0;
+  height: 250px;
+  border: 3px solid rgba(16, 181, 228, 0.8);
+  background-color: #FFF;
+  animation-name: menu-extend;
+  animation-duration: 0.2s;
+  overflow: hidden;
+}
+
+@keyframes menu-extend {
+  from {
+    height: 0px;
+  }
+
+  to {
+    height: 250px;
+  }
+}
+
+.dropdown-menu .nav-links {
+  flex-direction: column;
+  height: 200px;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0px;
+  list-style-type: none;
+  list-style-position: inside;
+}
+
+.dropdown-menu .nav-links a {
+  color: rgb(16, 181, 228);
+}
+
+.dropdown-menu .attend {
+  border: solid 3px rgba(16, 181, 228, 0.8);
+}
+
+.dropdown-menu .attend a {
+  color: rgb(16, 181, 228);
+  font-weight: 500;
+}
+
 ul[class="nav-links"] {
   list-style: none;
   display: flex;
@@ -170,7 +220,7 @@ button[class="attend"] {
 .nav-spacer {
   width: 100%;
   height: 80px;
-  background-color: #333;
+  background-color: #FFF;
 }
 
 /*********************
@@ -223,6 +273,9 @@ VIDEO CONTROLS
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#10b5e4', endColorstr='#69c75b', GradientType=1 );
 }
 
+.hero-container-mobile {
+  display: none;
+}
 
 /*********************
 TRIANGLE CONTENT
@@ -270,28 +323,25 @@ TRIANGLE CONTENT
   color: #EEE;
   position: absolute;
   right: 0;
-  text-align: right;
-  padding: 10px 3% 10px 20px;
+  top: 25%;
+  text-align: center;
+  padding: 10px 20px 10px 20px;
   text-shadow: 0px 2px 7px rgba(100, 100, 100, .25);
   background-color: rgba(16, 181, 228, .45);
   border-radius: 2px;
+  z-index: 100;
 }
 
 .countdown-container p {
   margin: 12px 0 8px 0;
-  font-size: .9em;
+  /*font-size: 1em;*/
 }
 
 #countdown {
   font-size: 2em;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid;
   padding-bottom: 12px;
-}
-
-#countdown span {
-  font-size: .8em;
-  font-weight: 100;
 }
 
 .thirty-five-percent-off {
@@ -307,6 +357,7 @@ TRIANGLE CONTENT
   width: inherit;
   padding: 10px 15px;
   margin: inherit;
+  margin-top: 10px;
   border: 2px rgba(16, 181, 228, 1) solid;
   background-color: #FFF;
   color: rgba(16, 181, 228, 1);
@@ -322,6 +373,11 @@ TRIANGLE CONTENT
   -webkit-box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
   -moz-box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
   box-shadow: 0px 5px 8px -1px rgba(0,0,0,0.19);
+}
+
+.hero-btn a:hover {
+  cursor: pointer;
+  color: #FFF;
 }
 
 /************************
@@ -380,7 +436,7 @@ ABOUT SECTION
   font-family: 'Montserrat', sans-serif;
   font-size: 1em;
   line-height: 2em;
-;
+  font-weight: 300;
 }
 
 #health-icon {
@@ -413,12 +469,25 @@ ABOUT SECTION
   font-size: 1.5em;
   line-height: 2.4em;
   letter-spacing: 2.4px;
+  margin: 0;
 }
 
 .attendee-text {
   font-family: 'Raleway', sans-serif,
   font-weight: 600;
   font-size: 1.5em;
+  animation-name: attendee-fade-in;
+  animation-duration: 1s;
+}
+
+@keyframes attendee-fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 100;
+  }
 }
 
 /*********************
@@ -546,7 +615,7 @@ SPEAKER STYLING
   padding: 0 10px;
   line-height: 1.5em;
   width: 92%;
-  opacity: 0.85;
+  opacity: 1;
   background-color: #00ADE5;
   position: absolute;
   bottom: -91px;
@@ -639,7 +708,6 @@ SCHEDULE
 ****************/
 
 .four-content-wrapper {
-  /*border: 2px blue solid;*/
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -654,7 +722,6 @@ SCHEDULE
 .tabs {
   display: flex;
   justify-content: center;
-  /*border: 2px pink solid;*/
 }
 
 .tabs p {
@@ -682,38 +749,52 @@ SCHEDULE
   font-family: 'Raleway', sans-serif;
 }
 
-
 .event {
   border: 2px solid #6CC62C;
   display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 30px;
   transition: height .5s;
 }
 
+.event-header-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+}
+
+.details-p {
+  padding: 0 5%;
+}
+
 .event-time {
-  /*border: 2px black solid;*/
-  min-width: 150px;
+  flex: 1;
   padding-left: 10px;
 }
 
+.event-details {
+  flex: 1;
+  text-align: center;
+}
+
 .inactive {
-  visibility: hidden;
+  display: none;
   line-height: .1px;
 }
 
 .active {
   visibility: visible !important;
   line-height: 1em !important;
+  margin-bottom: 40px;
 }
 
 .event-day {
-  /*border: 2px solid maroon;*/
-  min-width: 50px;
+  flex: 1;
   text-align: center;
   padding-right: 10px;
 }
-
 
 .purchase {
   display: flex;
@@ -771,7 +852,6 @@ SCHEDULE
   -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
 }
-
 
 .circle-sched {
   background-color: #FFFFFF;
@@ -846,11 +926,16 @@ ADMISSIONS
 
 .ticket-plan-header {
   width: 95%;
-  margin-bottom: 25px;
+  /*margin-bottom: 15px;*/
 }
 
 .ticket-plan-title {
   text-align: center;
+}
+
+.ticket-plan-title h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
 }
 
 .ticket-hr {
@@ -882,7 +967,7 @@ ADMISSIONS
   font-weight: 300;
   color: #FFF;
   padding: 0 10px;
-  line-height: 1.8em;
+  line-height: 1.6em;
   opacity: 0.85;
 }
 
@@ -936,7 +1021,7 @@ Explore
 }
 
 #google-map {
-  width: 65%;
+  width: 860px;
   height: 500px;
   margin-bottom: 40px;
 }
@@ -999,6 +1084,10 @@ Sponsor
 }
 
 /***** Gallery ****/
+
+#gallery-title {
+  margin-top: 40px;
+}
 
 .gallery-section {
   width: 100%;
@@ -1066,23 +1155,30 @@ FOOTER
 ********************/
 
 footer {
-  background-color: #4A4A4A;
+  background-color: #E77A65;
   height: 190px;
   color: #FFF;
   display: flex;
+  justify-content: space-around;
   font-family: 'Raleway', sans-serif;
   margin-top: 50px;
 }
 
+.newsletter-container,
+.volunteer-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .newsletter-container {
-  flex: 1;
+  width: 25%;
   font-size: .9rem;
   text-align: center;
 }
 
 
 .center-container{
-  flex: 2;
+  width: 50%;
   font-family: 'Montserrat', sans-serif;
   display: flex;
   flex-direction: column;
@@ -1106,7 +1202,14 @@ footer {
   width: 45px;
 }
 
-.footer-links a{
+#footer-logo-icons {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 40%;
+}
+
+.footer-links a {
   text-decoration: none;
   color: #FFF;
   font-size: 1.2rem;
@@ -1126,29 +1229,49 @@ footer {
 }
 
 .volunteer-container {
-  flex: 1;
+  width: 25%;
   font-size: .9rem;
   text-align: center;
 }
 
+.mobile-footer {
+  display: none;
+}
+
 .footer-btn {
-  width: 200px;
+  width: 130px;
   padding: 20px 21px;
-  margin: 20px 50px;
+  margin: 20px auto;
   margin-bottom: 0;
-  border: 2px #25D432 solid;
-  background-color: #FFF;
-  color: #25D432;
-  font-size: 1.3rem;
+  border: 2px #FFF solid;
+  background-color: #e77a65;
+  color: #FFF;
+  font-size: 1rem;
   transition: 0.5s;
   font-family: 'Raleway', sans-serif;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 2px
+}
 
+.footer-btn-container {
+  width: 130px;
+}
+
+.newsletter-container a,
+.volunteer-container a {
+  text-decoration: none;
+}
+
+.newsletter-container p,
+.volunteer-container p {
+  font-size: 0.8em;
 }
 
 .footer-btn:hover {
-  background-color: #25D432;
+  background-color: #FFF;
   cursor: pointer;
-  color: #FFFFFF;
+  color: #e77a65;
   -webkit-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   -moz-box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
   box-shadow: 0px 10px 14px -1px rgba(0,0,0,0.19);
@@ -1191,3 +1314,9 @@ footer {
   background-image: url("../images/SOCIALMEDIA/Twitter.hover.png");
 }
 
+<<<<<<< HEAD
+=======
+/**************
+MEDIA QUERIES
+**************/
+>>>>>>> 0fcb41f047da49082412c9cfae53388b2125fdc4

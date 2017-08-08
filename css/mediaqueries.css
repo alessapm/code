@@ -1,0 +1,523 @@
+@media (max-width: 1150px) {
+  #admission-plans {
+    width: 100%;
+  }
+
+  .footer-logos {
+    width: 80%;
+  }
+
+  .newsletter-container,
+  .volunteer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  footer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .nav-container {
+    width: 95%;
+  }
+
+  .footer-logos {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1050px) {
+
+  .ticket-plan-container {
+    width: 300px;
+  }
+
+  ul[class="nav-links"], li {
+  /*margin-right: 10px;*/
+  margin: 0 5px;
+  }
+
+  .nav-links-n-button {
+  width: 550px;
+  }
+
+  .footer-logos {
+    flex-direction: column;
+  }
+
+  .footer-links {
+    font-size: 1rem;
+  }
+
+  footer {
+    height: 300px;
+  }
+}
+
+@media (max-width: 1025px) {
+  footer {
+    height: 300px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .mobile-footer {
+    display: flex;
+  }
+
+  .footer-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .copyright {
+    margin: 12px auto;
+  }
+
+  #mobile-copyright {
+    flex-direction: column;
+  }
+
+  .desktop-footer {
+    display: none;
+  }
+
+  .volunteer-container,
+  .mobile-footer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .volunteer-container {
+    width: 50%;
+  }
+
+  .newsletter-container {
+    width: 50%;
+  }
+
+  .footer-logos {
+    flex-direction: row;
+  }
+
+  .center-container {
+    width: 75%;
+    padding:  0px 200px;
+
+  }
+
+  #mobile-copyright {
+  width: 100%;
+  display: flex;
+  }
+
+}
+
+@media (max-width: 1000px) {
+  .center-container {
+    width: 70%;
+  }
+}
+
+@media (max-width: 950px) {
+  .ticket-plan-container {
+    width: 250px;
+  }
+
+  .ticket-plan-info ul {
+  width: 80%;
+  }
+
+  #speaker-box-3 {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .video {
+    position: relative;
+    top: -60px;
+  }
+
+  #player {
+    width: 110%;
+  }
+
+  .nav-links-n-button {
+    display: none;
+    width: 150px;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .center-container {
+    padding: 0;
+  }
+
+  #google-map {
+    width: 680px;
+  }
+
+  #map-locations {
+    width: 75%;
+  }
+
+  .video-container {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 850px) {
+  .tabs {
+    justify-content: space-between;
+  }
+
+  #day1, #day2, #day3 {
+    margin: 0;
+  }
+
+  .gallery-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 800px) {
+  #google-map {
+    height: 75vh;
+  }
+
+  #admission-plans {
+    flex-direction: column;
+  }
+
+  .ticket-plan-container {
+    width: 335px;
+  }
+
+  .countdown-container {
+    top: 15%;
+ }
+}
+
+@media (max-width: 768px) {
+
+  .video-container {
+    display: none;
+  }
+
+  .hero-container-mobile {
+    background-image: url('../images/mobile-hero.png');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    height: 400px;
+    width: 100%;
+  }
+
+  .countdown-container {
+    top: 80px;
+  }
+
+  #countdown {
+    font-size: 1.2em;
+    border-bottom: 0px;
+    padding: 0;
+  }
+
+  .countdown-container button {
+    display: none;
+  }
+
+  .hero-container-mobile h1 {
+    z-index: 9;
+    color: rgba(250,250,250,.95);
+    margin: 0;
+    font-size: 2.5em;
+    text-shadow: 1px 1px 15px rgba(17, 84, 117, .85);
+  }
+
+  .hero-container-mobile h3 {
+    color: rgba(250,250,250,.95);
+    text-shadow: 1px 1px 10px rgba(17, 84, 117, .85);
+    margin: 80px 0 0 0;
+  }
+
+  .hero-container-mobile button {
+    width: auto;
+    background-color: rgba(250,250,250,.75);
+  }
+
+  .hero-container-mobile p {
+    color: rgba(255,255,255,1);
+    text-shadow: 1px 1px 4px rgba(17, 84, 117, 1);
+  }
+
+}
+
+@media (max-width: 700px) {
+  #google-map {
+    width: 500px;
+  }
+
+  #speaker-box-2 {
+    display: none;
+  }
+
+  .center-container {
+    width: 90%;
+  }
+
+  .footer-logo-icons {
+    width: 250px;
+  }
+}
+
+@media (max-width: 625px) {
+
+  .about-headline {
+    margin-bottom: 0;
+    width: 90%;
+  }
+
+  #themes-all {
+    flex-direction: column;
+  }
+
+  .theme-single {
+    width: 90%;
+  }
+
+  .theme-headline {
+    margin: 10px auto;
+  }
+
+  .theme-body {
+    margin-top: 0px;
+    line-height: 1.5em;
+  }
+
+  .will-attend,
+  .attendee-text {
+    margin: 10px auto;
+  }
+
+  .attendee-text {
+    margin-bottom: 20px
+  }
+
+  #about-horizontal-rule {
+  margin: 10px auto 0px auto;
+}
+
+  #map-locations {
+    width: 90%;
+  }
+
+  #google-map {
+    width: 90%;
+    height: 350px;
+  }
+
+  .tab {
+    font-size: 1.2em;
+    letter-spacing: 1.2px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+  }
+
+  .footer-logos {
+    flex-direction: column;
+  }
+
+  .newsletter-container,
+  .volunteer-container {
+    width: 100%;
+  }
+
+  .footer-links a,
+  .copyright {
+    font-size: 0.7em;
+  }
+
+  .sponsor-button img,
+  .sponsor-button {
+    width: 160px;
+    height: 160px;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .tabs {
+    justify-content: space-between;
+  }
+
+  #day1, #day2, #day3 {
+    margin: 0;
+  }
+
+  .event {
+    flex-direction: column;
+  }
+
+  .event-day {
+    display: none;
+    height: 0px;
+  }
+
+  .event-details {
+    text-align: center;
+  }
+
+  .details-p {
+    line-height: 15px;
+    height: 200px;
+  }
+
+  .four-content-wrapper {
+    width: 90%;
+  }
+
+
+  .row-gallery-one {
+    width: 60%;
+  }
+
+  .row-gallery-two {
+    width: 40%;
+  }
+
+  .row-gallery-three {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .nav-container {
+    width: 100%;
+  }
+
+  .nav-logo {
+    transform: scale(0.9);
+    padding: 0;
+  }
+
+  .hamburger {
+    padding-left: 0;
+  }
+
+
+  .nav-to-top {
+    display: none;
+  }
+
+  .gallery-container {
+    flex-direction: column;
+  }
+
+  .row-gallery-one,
+  .row-gallery-two {
+    width: 100%;
+  }
+
+  .footer-links {
+    width: 100%;
+  }
+
+  #footer-logo-icons {
+    width: 80%;
+  }
+
+}
+
+@media (max-width: 460px) {
+  .tab {
+    font-size: 1em;
+    letter-spacing: 0.8px;
+  }
+
+  .tabs {
+    font-size: 0.9em;
+  }
+
+  .sponsor-button img,
+  .sponsor-button {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+
+/* Largest smartphone width in portrait */
+@media (max-width: 414px) {
+  .nav-logo {
+    width: 250px;
+  }
+
+  .section-title-marker {
+    display: none;
+  }
+
+  .that-little-ball-thing {
+    display: none;
+  }
+
+  .section-title {
+    justify-content: center;
+  }
+
+  .ticket-plan-container {
+    width: 90%;
+  }
+
+  #google-map {
+    height: 50vh;
+  }
+
+  .sponsor-header {
+    letter-spacing: 1.4px;
+  }
+
+  #carousel-content {
+    transform: translateX(-10px);
+  }
+
+  #speaker-button {
+    transform: translateX(-10px);
+  }
+
+  .left-arrow {
+  transform: rotate(135deg) translateX(-15px) translateY(-20px);
+  -webkit-transform: rotate(135deg) translateX(-15px) translateY(-20px);
+  }
+
+  .right-arrow {
+  transform: rotate(-45deg) translateX(-15px) translateY(-20px);
+  -webkit-transform: rotate(-45deg) translateX(-15px) translateY(-20px);
+  }
+}
+
+@media (max-width: 370px) {
+  .sponsor-button img,
+  .sponsor-button {
+    width: 150px;
+    height: 150px;
+  }
+}
